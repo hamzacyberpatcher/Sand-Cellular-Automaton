@@ -148,19 +148,19 @@ int main()
         if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
         {
             for(int dx = - BRUSHSIZE / 2; dx <= BRUSHSIZE / 2; dx++)
-        {
-            for(int dy = -BRUSHSIZE / 2; dy <= BRUSHSIZE / 2; dy++)
             {
-                int x = mouseCords.x + dx;
-                int y = mouseCords.y + dy;
+                for(int dy = -BRUSHSIZE / 2; dy <= BRUSHSIZE / 2; dy++)
+                {
+                    int x = mouseCords.x + dx;
+                    int y = mouseCords.y + dy;
 
-                if (x < 0 || x >= CELLS_X || y < 0 || y >= CELLS_Y)
-                    continue;
+                    if (x < 0 || x >= CELLS_X || y < 0 || y >= CELLS_Y)
+                        continue;
 
-                grid[x][y].isSand = true;
-                grid[x][y].color = pallete.getNextColor();
+                    grid[x][y].isSand = true;
+                    grid[x][y].color = pallete.getNextColor();
+                }
             }
-        }
         }
         
 
