@@ -1,2 +1,10 @@
+# Ignore all object files
 *.o
+
+# Ignore files without an extension
+# This matches any name that does not contain a dot
+*
 !*.*
+
+# Optional: Do not ignore directories (so you can still enter them)
+!*/
