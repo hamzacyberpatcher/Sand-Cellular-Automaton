@@ -164,7 +164,7 @@ int main()
         }
         
 
-        window.clear();
+        window.clear(sf::Color(37, 217, 230));
 
         sf::RectangleShape curosrBg;
 
