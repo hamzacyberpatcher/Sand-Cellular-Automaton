@@ -157,8 +157,11 @@ int main()
                     if (x < 0 || x >= CELLS_X || y < 0 || y >= CELLS_Y)
                         continue;
 
-                    grid[x][y].isSand = true;
-                    grid[x][y].color = pallete.getNextColor();
+                    if (!grid[x][y].isSand)
+                    {
+                        grid[x][y].isSand = true;
+                        grid[x][y].color = pallete.getNextColor();
+                    }
                 }
             }
         }
