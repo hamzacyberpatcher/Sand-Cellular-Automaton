@@ -2,10 +2,7 @@
 
 ![sand](./screenshot/sand.png)
 
-To compile:
-<br>
+<p>To compile:</p>
 <code>g++ main.cpp -o sand -lsfml-audio -lsfml-system -lsfml-graphics -lsfml-window</code>
-<br>
-Than to run the file:
-<br>
+<p>Than to run the file:</p>
 <code>./sand</code>
