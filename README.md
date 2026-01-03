@@ -1,8 +1,20 @@
 # Sand Cellular Automaton
 
+A real-time falling sand simulation built with **C++** and **SFML**. This project uses cellular automata logic to simulate the physics of granular materials.
+
 ![sand](./screenshot/sand.png)
 
-<p>To compile:</p>
-<code>g++ main.cpp -o sand -lsfml-audio -lsfml-system -lsfml-graphics -lsfml-window</code>
-<p>Than to run the file:</p>
-<code>./sand</code>
+## 🚀 Getting Started
+
+### Prerequisites
+
+You will need a C++ compiler and the SFML library installed.
+* **Linux (Ubuntu/Debian):** `sudo apt-get install libsfml-dev`
+* **macOS:** `brew install sfml`
+
+### Compilation
+
+To compile the project, run the following command in your terminal. Note that the order of the flags is important for the linker to work correctly:
+
+```bash
+g++ main.cpp -o sand -lsfml-graphics -lsfml-window -lsfml-audio -lsfml-system
