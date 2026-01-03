@@ -59,7 +59,7 @@ private:
 public:
     Color getNextColor() {
         // Increment the hue slowly (change 0.1 to 1.0 for faster shifts)
-        colorCounter += 0.1f;
+        colorCounter += 0.01f;
         if (colorCounter > 360.0f) colorCounter = 0;
 
         // Get base color from current hue
